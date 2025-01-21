@@ -1,0 +1,390 @@
+/* reset margin dan padding untuk semua */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #4b0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; 
+    
+   
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Add margin on left and right */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a {
+    color: rgb(0, 0, 0);  
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Introduction section styling */
+.intro {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; 
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.intro-image {
+    flex-shrink: 0;
+}
+
+.intro-image img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 20px; /* Optional small margin from right edge */
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 14px;
+}
+
+.footer-left {
+    font-weight: bold;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right a img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1); /* make sure biar putihh */
+    transition: transform 0.3s;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1); 
+}
+
+/* About Page Styling */
+.profil {
+    width: 250px;
+    border-radius: 10%;
+    margin-top: 50px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding: 0 50px;
+    color: #fff;
+}
+
+.about-me {
+    width: 100%;
+    text-align: left;
+}
+
+.about-me h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+}
+
+.fun-facts h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ccc;
+}
+
+.fun-facts li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.0;
+}
+
+/* Skills Page Styling */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding-right: 50px; 
+    color: #fff;
+}
+
+.skills-content {
+    text-align: right;
+    width: 100%;
+}
+
+.skills-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Skills Page Styling */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding-right: 50px; /* Align closer to the right */
+    color: #fff;
+}
+
+.skills-content {
+    text-align: right;
+    width: 100%;
+}
+
+.skills-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 100px auto 40px;
+}
+
+.skills-content, .office-skills-content {
+    margin-bottom: 50px;
+}
+
+.skills-content {
+    text-align: right;
+    padding-right: 50px; 
+}
+
+.office-skills-content {
+    text-align: left;
+    padding-left: 50px; 
+}
+
+.skills-content h1, .office-skills-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Skills List Styling */
+.skills-list, .office-skills-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.skills-list li, .office-skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills-list li {
+    justify-content: flex-end;
+}
+
+.office-skills-list li {
+    justify-content: flex-start;
+}
+
+.skills-list .bullet, .office-skills-list .bullet {
+    font-size: 24px;
+    color: #ccc;
+    margin-right: 10px; 
+}
+
+.skills-list img, .office-skills-list img {
+    height: 40px;
+}
+
+/* ngehapus default list styling */
+.skills-list li::before, .office-skills-list li::before {
+    display: none;
+}
+
+.skills-content p, .office-skills-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Project Section Styling */
+.project-section {
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+}
+
+.project-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+/* Project Gallery Styling */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section Styling */
+.contact-section {
+    max-width: 600px;
+    margin: 100px auto 40px;
+    padding: 20px;
+}
+
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: #250000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #aaaaaa;
+}
+
